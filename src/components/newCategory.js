@@ -43,8 +43,7 @@ export default class NewCategory extends Component {
 
         var name = formData.get('name');
         var image = formData.get('image');
-        axios
-        .post("http://localhost:5050/category/create", formData , { headers: { 'Content-Type': 'multipart/form-data' } })
+        axios.post("http://localhost:5050/category/create", formData , { headers: { 'Content-Type': 'multipart/form-data' } })
         .then((response) => {
             debugger;
             console.dir(response);

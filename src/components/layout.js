@@ -6,6 +6,7 @@ import {
     Link
 } from 'react-router-dom';
 import About from './about'
+import CategoryList from "./categorylist";
 import { Contact } from './contact';
 import { Home } from './home'
 import { clases } from './layout.css'
@@ -39,6 +40,10 @@ export const Layout = function () {
 
                                     <Link className="nav-link active" aria-current="page" href="#" to="/new">NEw</Link>
                                 </li>
+                                <li className="nav-item">
+
+                                    <Link className="nav-link active" aria-current="page" href="#" to="/list">NEw</Link>
+                                </li>
 
 
                             </ul>
@@ -56,6 +61,7 @@ export const Layout = function () {
                             <Route exact path='/about' element={< About />}></Route>
                             <Route exact path='/contact' element={< Contact />}></Route>
                             <Route exact path='/new' element={< NewCategory />}></Route>
+                            <Route exact path='/list' element={< CategoryList />}></Route>
                         </Routes>
 
 
